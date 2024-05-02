@@ -20,7 +20,10 @@ $hotels = array_filter($hotels, function ($hotel) use ($parking) {
 </head>
 <body>
 <main>
-        <form action="" method="GET" class="bg-dark text-white container">
+        <form action="" method="GET" class=" container">
+             <label for="parking"> hotel con parcheggio:</label>
+            <input type="checkbox" id="parking" name="parking" value="1"> 
+             <input type="submit" value="Filtra">
         </form>
         <table class="table">
             <thead>
