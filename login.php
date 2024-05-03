@@ -14,9 +14,14 @@ include __DIR__ . "/Controllers/auth.php"
 </head>
 <body>
     <main>
+        <?php 
+        if(!empty($_GET["error"])) {
+            echo "<div> email o passowrd errati </div>";
+        }
+        
+        ?>
     <div class="d-flex justify-content-center align-items-center">
         <form id="loginform" action="login.php" method="POST">
-            <img class="mb-4" src="./images/mobile-logo.png" alt="logo" width="100">
             <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
             <div class="form-floating mb-4">
@@ -32,15 +37,6 @@ include __DIR__ . "/Controllers/auth.php"
         </form>
 </div>
 
-
-
-
-
-
-
-
-
-
-    </main>
+</main>
 </body>
 </html>
